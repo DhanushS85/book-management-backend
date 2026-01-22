@@ -36,6 +36,18 @@ API Refference
  POST	/api/books	      # Add a new book
  DELETE	/api/books/{id}	# Delete a book
 
+Example Response
+ {
+   "id": B-01,
+   "title": "Atomic Habits",
+   "author": "James Clear",
+   "isbn": "9780735211292",
+   "genre": "Self Help",
+   "rating": 4,
+   "imgUrl:"uploadedimage.com"
+ }
+
+
 Environment Variables
  #MongoDB
  MONGO_DB_NAME=your_db_name
