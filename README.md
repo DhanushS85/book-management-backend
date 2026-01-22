@@ -47,6 +47,19 @@ Example Response
    "imgUrl:"uploadedimage.com"
  }
 
+MongoDB Schema
+books Collection
+ {
+  _id: String,          // Custom ID (e.g., "B-001", "B-002")
+  title: String,        // Max 100 characters, required
+  author: String,       // Max 50 characters, required
+  publicationDate: Date,// Required
+  isbn: String,         // 13-digit ISBN, required
+  genre: String,        // Required
+  rating: Number,       // Integer between 1 and 5
+  imgUrl: String        // Optional book cover image URL
+}  
+
 
 Environment Variables
  #MongoDB
