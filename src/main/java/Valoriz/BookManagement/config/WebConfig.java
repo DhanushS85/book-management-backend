@@ -5,17 +5,24 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import jakarta.annotation.PostConstruct;
+
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
     @Value("${frontend.url}")
     private String frontendUrl;
 
+    @PostConstruct
+    public void debug() {
+        System.out.println("frontend.url = " + frontendUrl);
+    }
+
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/**")
-                .allowedOrigins(frontendUrl)
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+        registry.addMapping("/**")
+                .allowedOriginPatterns(frontendUrl)
+                .allowedMethods("*")
                 .allowedHeaders("*")
                 .allowCredentials(true);
     }
