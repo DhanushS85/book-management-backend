@@ -15,7 +15,7 @@ Tech Stack
 
 Features
 1.Add, View, Delete Books
-2.Upload Book Covers
+2.Upload Book Cover image 
 3.Fetch book details using ISBN from Google Books API
 4.RESTful API architecture
 5.MongoDB integration
