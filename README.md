@@ -11,15 +11,16 @@ Tech Stack
  5.Maven
  6.Google Books API
  7.Railway (Deployment)
- 8.Cloudinary (Optional – image storage)
+ 8.Cloudinary (image storage)
 
 Features
 1.Add, View, Delete Books
-2.Fetch book details using ISBN from Google Books API
-3.RESTful API architecture
-4.MongoDB integration
-5.CORS configuration for frontend access
-6.Environment-based configuration (production ready)
+2.Upload Book Covers
+3.Fetch book details using ISBN from Google Books API
+4.RESTful API architecture
+5.MongoDB integration
+6.CORS configuration for frontend access
+7.Environment-based configuration (production ready)
 
 Project Structur
 src/main/java
